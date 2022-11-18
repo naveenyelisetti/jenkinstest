@@ -9,7 +9,8 @@ pipeline {
         }
           stage('Build') {
             steps {
-                sh 'java -version'
+               bat '''javac Main.java
+                Java main'''
            
             }
         }
